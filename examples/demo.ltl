@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_font_truetype
+
+import std::io
+use ltl_font_truetype as lib
+
+fn main() {
+    io::println("ltl_font_truetype demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
